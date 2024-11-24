@@ -4,7 +4,7 @@ Thread2: Mỗi lần nhập xong dữ liệu một sinh viên, thread này
 Thread3: Đọc dữ liệu vừa ghi được và in ra màn hình sau đó thông báo cho thread 1 tiếp tục nhập thêm sinh viên.
 Sử dụng mutex và condition variable để giải quyết bài toán.
 */
-
+//hello 
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
