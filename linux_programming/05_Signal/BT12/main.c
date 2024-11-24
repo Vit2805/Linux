@@ -138,6 +138,7 @@ void *doc_du_lieu(void *arg){
         pthread_mutex_unlock(&mutex);
     }
     return 0;
+    
 }
 
 int main(){
@@ -164,4 +165,6 @@ int main(){
     pthread_mutex_destroy(&mutex);
     pthread_cond_destroy(&cond_input);
     pthread_cond_destroy(&cond_write);
+    
+
 }
