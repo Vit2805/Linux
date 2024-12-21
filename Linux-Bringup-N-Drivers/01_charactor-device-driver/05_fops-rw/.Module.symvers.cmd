@@ -1,0 +1,1 @@
+savedcmd_/home/vit/working_space/Linux/Linux-Bringup-N-Drivers/05_fops-rw/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/vit/working_space/Linux/Linux-Bringup-N-Drivers/05_fops-rw/Module.symvers -T /home/vit/working_space/Linux/Linux-Bringup-N-Drivers/05_fops-rw/modules.order -i Module.symvers -e 

@@ -1,0 +1,1 @@
+savedcmd_/home/vit/working_space/Linux/Linux-Bringup-N-Drivers/02_major-minor/modules.order := {   echo /home/vit/working_space/Linux/Linux-Bringup-N-Drivers/02_major-minor/main.o; :; } > /home/vit/working_space/Linux/Linux-Bringup-N-Drivers/02_major-minor/modules.order

@@ -1,0 +1,1 @@
+savedcmd_/home/vit/working_space/Linux/Linux-Bringup-N-Drivers/05_fops-rw/exam.mod := printf '%s\n'   exam.o | awk '!x[$$0]++ { print("/home/vit/working_space/Linux/Linux-Bringup-N-Drivers/05_fops-rw/"$$0) }' > /home/vit/working_space/Linux/Linux-Bringup-N-Drivers/05_fops-rw/exam.mod
