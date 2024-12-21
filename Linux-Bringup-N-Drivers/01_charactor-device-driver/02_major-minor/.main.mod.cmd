@@ -1,1 +1,0 @@
-savedcmd_/home/vit/working_space/Linux/Linux-Bringup-N-Drivers/02_major-minor/main.mod := printf '%s\n'   main.o | awk '!x[$$0]++ { print("/home/vit/working_space/Linux/Linux-Bringup-N-Drivers/02_major-minor/"$$0) }' > /home/vit/working_space/Linux/Linux-Bringup-N-Drivers/02_major-minor/main.mod

@@ -1,1 +1,0 @@
-savedcmd_/home/vit/working_space/Linux/Linux-Bringup-N-Drivers/03_device-file/exam.mod := printf '%s\n'   exam.o | awk '!x[$$0]++ { print("/home/vit/working_space/Linux/Linux-Bringup-N-Drivers/03_device-file/"$$0) }' > /home/vit/working_space/Linux/Linux-Bringup-N-Drivers/03_device-file/exam.mod

@@ -1,1 +1,0 @@
-savedcmd_/home/vit/working_space/Linux/Linux-Bringup-N-Drivers/03_device-file/modules.order := {   echo /home/vit/working_space/Linux/Linux-Bringup-N-Drivers/03_device-file/exam.o; :; } > /home/vit/working_space/Linux/Linux-Bringup-N-Drivers/03_device-file/modules.order
