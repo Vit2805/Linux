@@ -1,7 +1,5 @@
 #include <stdint.h>
 
-
-
 void gia_tri_a(){
     static int a = 0;
     a++; 
