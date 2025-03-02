@@ -91,29 +91,32 @@ nối cả .bss và COMMON
 
 ## 5.5. Function pointer and callbacks
 
-'''c
-#include <stdio.h>
-// Callback function for comparison
-int compare(int a, int b) {
-return a - b;}
- // A function that takes a callback
-void sort(int *arr, int size, int (*cmp)(int, int)) {
-    for (int i = 0; i < size - 1; i++) {
-        for (int j = i + 1; j < size; j++) {
-            if (cmp(arr[i], arr[j]) > 0) { // Use the callback function
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp; 
-        } 
-        } 
-    }
-}
-int main() {
-    int numbers[] = {4, 2, 3, 1};
-    int size = sizeof(numbers) / sizeof(numbers[0]);
-    sort(numbers, size, compare);
-    for (int i = 0; i < size; i++) {
-    printf("%d ", numbers[i]); // Output: 1 2 3 4 
-    }
-return 0;}
-'''
+## 5.6. Advanced  pointer topics
+
+- void pointers: kiểu con trỏ có thể chứa địa chỉ của bất kỳ kiểu dữ liệu nào 
+    + ví dụ: void *ptr
+    + sử dụng khi chưa biết kiểu dữ liệu hoặc chung
+- pointer to constant: một con trỏ trỏ tới hằng số
+    + ví dụ: const int *ptr
+- constant pointer: một con trỏ có địa chỉ không thể thay đổi,nhưng giá trị tại địa chỉ đó có thể được sửa đổi
+    + ví dụ: int const *ptr
+
+## 5.7. Poiter casting (ép kiểu con trỏ)
+- Chuyển đổi con trỏ trong C cho phép bạn diễn giải lại hoặc chuyển đổi một con trỏ từ kiểu này sang kiểu khác. Nó thường được sử dụng để xử lý các con trỏ chung (void*), thao tác bộ nhớ hoặc giao tiếp với phần cứng và thư viện.
+
+- Rủi ro khi ép kiểu con trỏ:
+    + Giải thích sai kiểu dữ liệu khi ép kiểu giữa các loại không tương thích.
+    + Lỗi căn chỉnh bộ nhớ có thể gây lỗi chương trình trên các kiến trúc khác nhau.
+    + Vấn đề về tính di động giữa các nền tảng.
+- Ép kiểu khi làm việc với bộ nhớ:
+
+    + Ép kiểu con trỏ giúp thao tác với bộ nhớ thô, như buffer hoặc mảng byte.
+    +  Ví dụ về sao chép một int vào buffer và ép kiểu buffer về int*.
+- Ép kiểu giữa các con trỏ tương thích:
+
+    + Cho phép ép kiểu giữa các con trỏ có liên quan (vd: int* và long*).
+    + Cần cẩn thận với kích thước kiểu dữ liệu để tránh lỗi không xác định.
+- Ép kiểu void* về một kiểu cụ thể:
+
+    + void* là con trỏ tổng quát có thể trỏ đến bất kỳ loại dữ liệu nào.
+    + Khi sử dụng, cần ép kiểu về con trỏ phù hợp trước khi truy xuất giá trị.
