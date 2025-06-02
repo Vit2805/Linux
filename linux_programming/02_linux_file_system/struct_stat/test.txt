@@ -1,0 +1,1 @@
+Đây là một đoạn dữ liệu mẫu được ghi vào file test.txt
